@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+        * {
+            font-family: 'Courgette', cursive;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-image: url("../assets/images/img1.jpg");
+            background-size: cover;
+            /* background-position: center; */
+            background-repeat: no-repeat;
+        }
+
+        .container{
+            position: relative;
+            width: 700px;
+            min-height: 400px;
+            padding: 30px 50px;
+            border-radius: 30px;
+            box-shadow: 25px 25px 75px rgba(0,0,0,0.25), 10px 10px 70px, 
+            inset 5px 5px 10px rgba(0,0,0,0.5),
+            inset 5px 5px 20px rgba(255,255,255,0.2),
+            inset -5px -5px 15px rgba(0,0,0,0.75);
+            backdrop-filter: blur(10px);
+            border: 5px solid white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        h1{
+            font-size:60px;
+            font-weight: bolder;
+            color:white;
+            text-shadow: 10px 10px 20px rgba(0, 0, 0, 0.7);
+            text-decoration:underline;
+        }
+    </style>
+</head>
+<body>
+    <section class="dashboard">
+        <div class="container">
+            <div class="welcome-message">
+                <h1>Welcome, <%= name %>!</h1>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

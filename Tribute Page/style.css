@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Courgette', cursive;
+}
+
+body{
+    background-image: url(/assets/images/img1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    backdrop-filter: blur(10px);
+}
+
+.container{
+    padding: 0px 150px ;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.head{
+    margin:0px;
+    padding:40px 0;
+    /* padding-top: 50px; */
+    text-align: center;
+    font-size: 25px;
+    text-decoration: underline;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+span{
+    text-transform: uppercase;
+}
+
+.year{
+    text-align: end;
+}
+
+.quote{
+    padding:40px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.quote h2{
+    /* color:#004225;
+    text-shadow: 2px 2px 4px #09804c; */
+    color:red;
+    text-shadow: 2px 2px 4px rgb(184, 25, 25);
+}
+
+img
+{
+    border-radius: 50%;
+    border: 5px solid black;
+}
+
+.img{
+    padding:40px 0px;
+}
+
+p{
+    font-size: 20px;
+    padding: 20px 0px;
+    font-weight: bold;
+    color: black;
+    /* text-align: center; */
+}
+
+h2{
+    color:rgb(89, 11, 167);
+    font-size: 35px;
+    font-weight: bolder;
+    text-shadow: 2px 2px 4px rgb(115, 14, 216);
+    /* text-align: center; */
+}
+
+.innerquote{
+    color: #6d1313;
+    text-shadow: 2px 2px 4px #b11d1d;
+    text-transform: capitalize;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+footer p{
+    color:#004225;
+    text-shadow: 2px 2px 4px #09804c;
+    text-align: end;
+    padding:30px
+}
+
+a{
+    color: #6d1313;
+    text-shadow: 2px 2px 4px #b11d1d;
+
+}
+
+@media screen and (max-width:700px) {
+    header{
+        display:block;
+    }
+
+    .container{
+        padding: 0 10px;
+    }
+
+    .img{
+        text-align: center;
+    }   
+}
+
+@media screen and (max-width: 1300px) and (min-width: 700px){
+    .container{
+        padding: 0 150px;
+    }
+}
